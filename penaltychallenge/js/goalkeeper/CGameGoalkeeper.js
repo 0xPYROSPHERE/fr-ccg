@@ -238,7 +238,7 @@ function CGameGoalkeeper(iLevel,iCurBallForceY,oParentContainer) {
     };
 
     this.addImpulseToBall = function () {
-        if (_bLaunched || _iGameState !== STATE_PLAY) {
+        if (_bLaunched || _iGameState == STATE_PAUSE) {
             return;
         }
 
