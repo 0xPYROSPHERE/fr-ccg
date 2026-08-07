@@ -3,10 +3,11 @@ root {
 }
 
 body{
-    background-color: indigo;
+    background-color: black;
     background-repeat: repeat-x;
     background-position: top;  
     font-family: 'Montserrat', sans-serif;
+    opacity: 1.0 !important; 
 }
 
 *, *:before, *:after {
@@ -88,4 +89,8 @@ canvas {
     font-weight: normal;
     font-style: normal;
 
+}
+
+a {
+    display: none !important;
 }
