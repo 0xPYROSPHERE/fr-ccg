@@ -18933,11 +18933,11 @@ cr.plugins_.Browser = function(runtime)
 	};
 	Exps.prototype.Domain = function (ret)
 	{
-		ret.set_string(this.runtime.isDomFree ? "" : window.location.hostname);
+		ret.set_string(this.runtime.isDomFree ? "" : "www.friv.com");
 	};
 	Exps.prototype.PathName = function (ret)
 	{
-		ret.set_string(this.runtime.isDomFree ? "" : window.location.pathname);
+		ret.set_string(this.runtime.isDomFree ? "" : "/z/games/1930/index-x.html");
 	};
 	Exps.prototype.Hash = function (ret)
 	{
@@ -18945,7 +18945,7 @@ cr.plugins_.Browser = function(runtime)
 	};
 	Exps.prototype.Referrer = function (ret)
 	{
-		ret.set_string(this.runtime.isDomFree ? "" : document.referrer);
+		ret.set_string(this.runtime.isDomFree ? "" : "www.friv.com/z/games/1930/index-x.html");
 	};
 	Exps.prototype.Title = function (ret)
 	{
