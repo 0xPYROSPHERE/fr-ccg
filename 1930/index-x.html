@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="https://cdn.jsdelivr.net/gh/0xPYROSPHERE/fr-ccg@main/1930/">
+    <title>1930</title>
+
+    <!-- Standardised web app manifest -->
+    <!-- <link rel="manifest" href="appmanifest.json"> -->
+
+    <!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+    <style>
+        /* gs01 */
+        /* gs02 */
+        /* gs03 */
+
+        * {
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            -moz-user-select: -moz-none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            background: black;
+            color: #fff;
+            overflow: hidden;
+            touch-action: none;
+            -ms-touch-action: none;
+            height: 100%;
+            opacity: 1 !important;
+        }
+
+        canvas {
+            touch-action-delay: none;
+            touch-action: none;
+            -ms-touch-action: none;
+            background: black;
+        }
+
+        a {
+            display: none !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <!-- The canvas must be inside a div called c2canvasdiv -->
+    <div id="c2canvasdiv">
+
+        <!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+        <canvas id="c2canvas" width="1280" height="720">
+            <!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+            <h1>Your browser does not appear to support HTML5. Try upgrading your browser to the latest version.</h1>
+        </canvas>
+
+    </div>
+
+    <!-- Pages load faster with scripts at the bottom -->
+
+    <!-- Construct 2 exported games require jQuery. -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+
+
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+    <script src="c2runtime.min.js"></script>
+
+    <script>
+        // Start the Construct 2 project running on window load.
+        jQuery(document).ready(function() {
+            // Create new runtime using the c2canvas
+            cr_createRuntime("c2canvas");
+        });
+
+        // Pause and resume on page becoming visible/invisible
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+                cr_setSuspended(true);
+            else
+                cr_setSuspended(false);
+        };
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        //gpi1//
+        //gpi2//
+
+        function siteLockGPI() {
+            return;
+        }
+        
+        siteLockGPI();
+        
+        //gpi3//
+        //gpi4//
+
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+
+        const doResize = true;
+        const focusWindow = true;
+		const timedReloadEnabled = false;
+		const auxSetting = false;
+
+
+        
+        function resizeGameCanvas() {
+            const canvas = document.querySelector("canvas");
+
+            if (canvas) {
+                canvas.style.maxWidth = "100vw";
+                canvas.style.maxHeight = "100vh";
+            }
+        }
+
+        if (doResize) {
+            const canvasInterval = setInterval(resizeGameCanvas, 1500);
+        }
+
+        if (focusWindow) {
+            window.addEventListener('blur', () => {
+                window.focus();
+            });
+        }
+        
+        //gpi5//
+        //gpi6//
+        
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+
+    </script>
+</body>
+
+</html>
