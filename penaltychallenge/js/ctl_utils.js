@@ -712,7 +712,18 @@ function distanceV2 ( v1, v2){
 }
 
 function clearAllItem(){
-    localStorage.clear();
+    localStorage.removeItem("Is_available");
+    localStorage.removeItem("penalty_challenge_match_1");
+    localStorage.removeItem("penalty_challenge_match_2");
+    localStorage.removeItem("penalty_challenge_match_3");
+    localStorage.removeItem("penalty_challenge_match_4");
+    localStorage.removeItem("penalty_challenge_match_5");
+    localStorage.removeItem("penalty_challenge_match_6");
+    localStorage.removeItem("penalty_challenge_match_7");
+    localStorage.removeItem("penalty_challenge_match_8");
+    localStorage.removeItem("penalty_challenge_match_9");
+    localStorage.removeItem("penalty_challenge_match_10");
+    localStorage.removeItem("penalty_challenge_team");
 }
 
 
